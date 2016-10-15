@@ -1,0 +1,35 @@
+basePath: /
+definitions:
+  Server:
+    properties:
+      city: {type: string}
+      provider: {type: string}
+      public_ip: {type: string}
+      state: {type: string}
+      zip_code: {type: string}
+    type: object
+host: AUTO:5014
+info:
+  contact: {email: fred@PageKicker.com, name: Fred Zimmerman }
+  description: Sell your personal marketing preferences.
+  title: Personal Marketing Broker
+  x-21-category: utilities
+  x-21-github-project-url:
+  x-21-keywords: [advertising, shopping, marketing]
+  x-21-quick-buy:
+  x-21-total-price: {max: 5000, min: 3000}
+paths:
+  /buy/basics:
+    get:
+      consumes: [application/x-www-form-urlencoded]
+      produces: [application/json]
+      responses:
+        200:
+          description: Basic demographic info about the user.
+          schema:
+            properties:
+              server: {$ref: '#/definitions/Server'}
+      summary: Returns basic demographic info about the user.
+schemes: [http]
+swagger: '2.0'
+x-21-manifest-path: /manifest
