@@ -1,0 +1,9 @@
+{
+   "city": "Ypsitucky",
+    "country": "US",
+   "income" : "100000",
+    "gender" : "male",
+    "marital" : "married",
+    "homeowner" : "yes",
+    "number of years" : "10"
+  }
