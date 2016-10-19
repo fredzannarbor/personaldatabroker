@@ -12,7 +12,7 @@ host: AUTO:5014
 info:
   contact: {email: fred@PageKicker.com, name: Fred Zimmerman }
   description: Sell your personal marketing preferences.
-  title: Personal Marketing Broker
+  title: Personal Data Broker
   x-21-category: utilities
   x-21-github-project-url:
   x-21-keywords: [advertising, shopping, marketing]
