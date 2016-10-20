@@ -63,14 +63,14 @@ def iabs():
 @app.route('/buy/myersbriggs')
 @payment.required(5000)
 def myersbriggs():
-    with open('static/fivefactors.json', 'r') as f:
+    with open('static/myersbriggs.json', 'r') as f:
         data = json.load(f)
         return jsonify(data)
 
-@app.route('/buy/fivefactors')
+@app.route('/buy/ocean')
 @payment.required(5000)
 def fivefactors():
-    with open('static/fivefactors.json', 'r') as f:
+    with open('static/ocean.json', 'r') as f:
         data = json.load(f)
         return jsonify(data)
 
