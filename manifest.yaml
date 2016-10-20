@@ -8,7 +8,7 @@ definitions:
       state: {type: string}
       zip_code: {type: string}
     type: object
-host: '[fcce:a977:ee42:b057:1a63:0000:0000:0001]:5014'
+host: '[fcce:a977:eef0:ac6d:2715:0000:0000:0001]:5014'
 info:
   contact: {email: fred@PageKicker.com, name: Fred Zimmerman}
   description: Sell your personal data.  Json templates include basic demographics,
@@ -31,6 +31,17 @@ paths:
             properties:
               server: {$ref: '#/definitions/Server'}
       summary: Returns basic demographic info about the user.
+  /buy/interests:
+    get:
+      consumes: [application/x-www-form-urlencoded]
+      produces: [application/json]
+      responses:
+        200:
+          description: User-provided list of interests.
+          schema:
+            properties:
+              server: {$ref: '#/definitions/Server'}
+      summary: Returns keywords and unstructured text describing user interests.
 schemes: [http]
 swagger: '2.0'
 x-21-manifest-path: /manifest
