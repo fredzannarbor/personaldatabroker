@@ -8,13 +8,14 @@ definitions:
       state: {type: string}
       zip_code: {type: string}
     type: object
-host: AUTO:5014
+host: '[fcce:a977:ee42:b057:1a63:0000:0000:0001]:5014'
 info:
-  contact: {email: fred@PageKicker.com, name: Fred Zimmerman }
-  description: Sell your personal data.  Json templates include basic demographics, IAB, Myers-Briggs, and OCEAN.
+  contact: {email: fred@PageKicker.com, name: Fred Zimmerman}
+  description: Sell your personal data.  Json templates include basic demographics,
+    IAB, Myers-Briggs, and OCEAN.
   title: Personal Data Broker
   x-21-category: utilities
-  x-21-github-project-url:
+  x-21-github-project-url: null
   x-21-keywords: [advertising, shopping, marketing]
   x-21-quick-buy: 21 buy pagekicker/personal-data-broker/buy/basics
   x-21-total-price: {max: 5000, min: 3000}

@@ -1,9 +1,13 @@
 {
-   "city": "Ypsitucky",
-    "country": "US",
-   "income" : "100000",
-    "gender" : "male",
-    "marital" : "married",
-    "homeowner" : "yes",
-    "number of years" : "10"
-  }
+	"city": "Ypsitucky",
+  "state" : "Michigan",
+	"country": "US",
+	"income": "100000",
+	"gender": "male",
+	"marital": "married",
+	"homeowner": "yes",
+	"number of years": "10",
+	"data set name": "basics",
+	"description": "basic self-provided demographic information",
+	"updated": "2016-10-20"
+}

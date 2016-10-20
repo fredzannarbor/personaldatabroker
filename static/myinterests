@@ -1,1 +1,10 @@
-{"myinterests" : "automobiles", "computers", "antique brass cow-creamers"}
+{
+	"data set name": "interests",
+	"description": "self-provided list of interests",
+	"key phrases": ["automobiles",
+		"computers",
+		"antique brass cow-creamers"
+	],
+	"free text": "I am fascinated with everything related to P.G. Wodehouse, the Edwardian era, and microcommerce.",
+	"updated": "2016-10-20"
+}

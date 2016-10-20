@@ -1,9 +1,13 @@
 {
-    "IAB1": "Arts & Entertainment",
-    "IAB1-1": "Arts & Entertainment::Books & Literature",
-    "IAB2-3": "Automotive::Buying/Selling Cars",
-    "IAB17-15": "Sports::Golf",
-    "IAB18-4": "Style & Fashion::Jewelry",
-    "IAB19-31": "Technology & Computing::Unix"
-
+	"IAB categories": {
+		"IAB1": "Arts & Entertainment",
+		"IAB1-1": "Arts & Entertainment::Books & Literature",
+		"IAB2-3": "Automotive::Buying/Selling Cars",
+		"IAB17-15": "Sports::Golf",
+		"IAB18-4": "Style & Fashion::Jewelry",
+		"IAB19-31": "Technology & Computing::Unix"
+	},
+	"data set name": "IAB",
+	"description": "List of Internet Advertising Bureau Categories that I am interested in.",
+	"updated": "2016-10-20"
 }
