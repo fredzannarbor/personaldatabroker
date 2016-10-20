@@ -11,12 +11,12 @@ definitions:
 host: AUTO:5014
 info:
   contact: {email: fred@PageKicker.com, name: Fred Zimmerman }
-  description: Sell your personal marketing preferences.
+  description: Sell your personal data.  Json templates include basic demographics, IAB, Myers-Briggs, and OCEAN.
   title: Personal Data Broker
   x-21-category: utilities
   x-21-github-project-url:
   x-21-keywords: [advertising, shopping, marketing]
-  x-21-quick-buy:
+  x-21-quick-buy: 21 buy pagekicker/personal-data-broker/buy/basics
   x-21-total-price: {max: 5000, min: 3000}
 paths:
   /buy/basics:
