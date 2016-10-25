@@ -74,11 +74,11 @@ def fivefactors():
         data = json.load(f)
         return jsonify(data)
 
-@app.route('/buy/person')
+@app.route('/buy/contact')
 @payment.required(10000)
 def person():
 
-    with open('static/person.json', 'r') as f:
+    with open('static/contact.json', 'r') as f:
         data = json.load(f)
         return jsonify(data)
 
