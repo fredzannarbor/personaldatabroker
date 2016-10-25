@@ -1,0 +1,16 @@
+{
+"@context": "http://21.co/pagekicker",
+ "@type": "Person",
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Ann Arbor",
+   "addressRegion": "MI",
+   "postalCode": "48103",
+   "streetAddress": "2603 Oak Valley Drive, Apt 104, Ann Arbor MI 48103"
+ },
+ "email": "mailto:fred@pagekicker.com",
+ "jobTitle": "CEO",
+ "name": "Fred Zimmerman",
+ "telephone": "N/A",
+ "url": "http://www.PageKicker.com"
+}

@@ -11,8 +11,8 @@ definitions:
 host: '[fcce:a977:eef0:ac6d:2715:0000:0000:0001]:5014'
 info:
   contact: {email: fred@PageKicker.com, name: Fred Zimmerman}
-  description: Sell your personal data.  Json templates include basic demographics,
-    IAB, Myers-Briggs, and OCEAN.
+  description: Sell your personal data.  Json templates from Schema.org include basic
+    demographics, IAB, Myers-Briggs, and OCEAN, contact info, and best hours.
   title: Personal Data Broker
   x-21-category: utilities
   x-21-github-project-url: https://github.com/fredzannarbor/personaldatabroker
@@ -31,6 +31,17 @@ paths:
             properties:
               server: {$ref: '#/definitions/Server'}
       summary: Returns basic demographic info about the user.
+  /buy/contact:
+    get:
+      consumes: [application/x-www-form-urlencoded]
+      produces: [application/json]
+      responses:
+        200:
+          description: Contact information.
+          schema:
+            properties:
+              server: {$ref: '#/definitions/Server'}
+      summary: Returns preferred contact information.
   /buy/interests:
     get:
       consumes: [application/x-www-form-urlencoded]
