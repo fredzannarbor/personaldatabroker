@@ -23,7 +23,7 @@ payment = Payment(app, wallet)
 
 # hide logging
 log = logging.getLogger('werkzeug')
-log.setLevel(logging.ERROR)
+log.setLevel(logging.WARNING)
 
 
 @app.route('/buy/basics')
@@ -74,6 +74,22 @@ def fivefactors():
         data = json.load(f)
         return jsonify(data)
 
+@app.route('/buy/person')
+@payment.required(10000)
+def person():
+
+    with open('static/person.json', 'r') as f:
+        data = json.load(f)
+        return jsonify(data)
+
+@app.route('/buy/besthours')
+@payment.required(20000)
+def besthours():
+
+    with open('static/besthours.json', 'r') as f:
+        data = json.load(f)
+        return jsonify(data)
+
 if __name__ == '__main__':
     import click
 
@@ -82,7 +98,7 @@ if __name__ == '__main__':
                   help="Run in daemon mode.")
     def run(daemon):
         if daemon:
-            pid_file = './pmb.pid'
+            pid_file = './pdb.pid'
             if os.path.isfile(pid_file):
                 pid = int(open(pid_file).read())
                 os.remove(pid_file)
@@ -92,12 +108,12 @@ if __name__ == '__main__':
                 except:
                     pass
             try:
-                p = subprocess.Popen(['python3', 'pmb-server.py'])
+                p = subprocess.Popen(['python3', 'pdb-server.py'])
                 open(pid_file, 'w').write(str(p.pid))
             except subprocess.CalledProcessError:
-                raise ValueError("error starting pmb-server.py daemon")
+                raise ValueError("error starting pdb-server.py daemon")
         else:
             print("Personal marketing broker running on port 5014...")
-            app.run(host='::', port=5014)
+            app.run(host='::', port=5014, debug=True)
 
     run()

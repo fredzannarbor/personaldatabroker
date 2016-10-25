@@ -1,0 +1,8 @@
+{
+  "@context": "http://pagekicker.co/pagekicker",
+  "@type": "Person",
+  "name": "Fred Zimmerman",
+  "bestHours": "Mo,Tu,We,Th,Fr 011:00-16:00",
+  "TimeZoneDesignator" : "EST",
+  "timezoneoffset" : "-05:00"
+}
