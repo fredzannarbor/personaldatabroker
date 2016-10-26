@@ -90,6 +90,14 @@ def besthours():
         data = json.load(f)
         return jsonify(data)
 
+@app.route('/buy/for21')
+@payment.required(3000)
+def for21():
+
+    with open('static/for21.json', 'r') as f:
+        data = json.load(f)
+        return jsonify(data)
+
 if __name__ == '__main__':
     import click
 
