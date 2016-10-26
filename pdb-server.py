@@ -25,6 +25,7 @@ payment = Payment(app, wallet)
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.WARNING)
 
+# make this into a class asap!
 
 @app.route('/buy/basics')
 @payment.required(3000)
